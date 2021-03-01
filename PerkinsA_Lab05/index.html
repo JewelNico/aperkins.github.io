@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="mystyles.css">
+<link rel="icon" href="favicon.ico">
+<title>Yummy Organics </title>
+<meta charset="utf-8">
+<style>
+
+h1, h2 { font-family: Georgia, "Times New Roman",serif;
+	 font-size:  1.725em;
+	 text-align: center;
+}
+	
+</style>
+</head>
+<body>
+<header>
+
+	<h1 style = "font-family: Palatino, Georgia, serif; font-size: 38pt; text-align:left; text-shadow: 2px 2px 8px purple">Yummy Organics</h1>
+</header>
+<script>
+	var visitorName;
+	visitorName= prompt("What's Your Name?");
+	document.write("<h3>Welcome " + visitorName + "</h3>");
+</script>
+
+<script language="javascript">
+	var todaysDate = new Date()
+	var saleDate = new Date ("December 18, 2020");
+	var daysSub = saleDate - todaysDate;
+	var daysLeft= Math.ceil(daysSub/(1000*60*60*24));
+document.write("THERE ARE " + daysLeft + " DAYS UNTIL THE SALE OF THE YEAR!!")
+</script> <br>
+
+<script language="javascript">
+	var quo= new Array() 
+	quo[0]="We use all natural ingredients."
+	quo[1]="Every product is made by hand."
+	quo[2]="Each package has a handwritten note." 
+	quo[3]="Deep in the Hear of Texas." 
+	quo[4]="Vegan Friendly Products."
+	randomNum=Math.floor(Math.random() * 5)
+document.write(quo[randomNum])       
+</script>
+</body>
+</html>
+
+<nav>
+<ul>
+	<b>
+	    <li><a href="links.html">Find Us</li></a>  &nbsp;
+	    <li><a href="images.html">Products</li></a>  &nbsp;
+	    <li><a href="contacts.html">Employee Contacts</li></a>  &nbsp;
+	    <li><a href="forms.html">Bulk Orders</li></a>  &nbsp;
+	</b>
+</ul>
+</nav>
+
+<main>
+	<h2 style = "font-family: Palatino, Georgia, serif; font-size: 20pt; text-align:center; color: white">Our Story</h2>
+<p><strong>Yummy Organics started in a small kitchen in Fort,Worth Texas. Our products were created with <br>
+love,passion,and a desire for more healthy skincare products.Our products are made in small batches <be>
+to ensure a more premium quality. We only use all-natural organic ingredients and scents.Yummy Organics <br>
+aims to provide long lasting moisturizing products. </strong>  </p>
+	
+<p><strong>Each product is made with care and sealed with love. Our team is dedicated to provide products that will<br>
+make and keep you apart of growing family. We hope that you entrust us with your skincare needs and help you<br>
+ on your journey to have healthy skin. What goes on your body also goes into your body.Thank you for choosing<br>
+us to be apart of your daily skincare routine.</strong></p>
+
+	<h2 style = "font-family: Palatino, Georgia, serif; font-size: 18pt; text-align:center; color: white">Our Products</h2>
+	<dl>
+		<dt style = "color: white"><strong>Soap</strong></dt>
+			<dd><strong>Hand crafted, organic, and a wealth of rich lather that will make you feel fantastic.</strong></dd>
+		<dt style = "color:white"><strong>Body Butter</strong></dt>
+			<dd><strong>Not massed produced! Creamy, moisturizing, silky smooth application. Will make your skin feel like butter.</strong></dd> 
+		<dt style = "color: white"><strong>Herbal Salves</strong></dt>
+			<dd><strong>Our salves will protect, soothe and promote healing of your skin.</strong></dd>
+	</dl>
+</main>
+<footer>
+	<h3 style = "font-family: Palatino, Georgia, serif; font-size: 14pt; text-align:left; background-color: pink;
+  opacity: 0.5; color: black">Connect With Us</h3>
+	Email: <a href="mailto:contact@yummyorganics.com" style = "color:red">contact@yummyorganics.com</a> <br>
+	<small><i>Copyright &copy; 2020 Yummy Organics </i></small> <br>
+
+<video controls="controls" poster="stinging_nettle.mp4"
+      width="160" height="150">
+	 <source src="stinging_nettle.mpv" type="video/mp4"> 
+	 <source src="stinging_nettle.ogg" type="video/ogg">
+     <a href="stinging_nettle.mov">Natural Beauty</a> (.mov)
+   </video>
+	
+</footer>
+<h4> Page last updated on:
+<script>
+document.write(document.lastModified);
+</script>
+</h4>
+</body>
+</html>

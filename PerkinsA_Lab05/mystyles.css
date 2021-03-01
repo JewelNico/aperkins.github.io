@@ -1,0 +1,52 @@
+
+body {	background-image: url(herbalbackground.jpg) ;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-size: cover;
+ }
+
+
+
+nav ul {list-style-image: url('leaf_bullet.jpg');
+
+}
+
+
+nav { 	float: left;
+	width: 150px;
+	  
+} 
+
+
+nav a:link { color: blue;
+
+}
+
+
+nav a:visted { color:orange;
+
+}
+
+
+
+nav a:hover { text-decoration: none;
+	    background-color: yellow;
+	
+}
+
+
+
+main { 	margin-left: 165px;
+	
+} 
+
+img  { position: relative;
+       right: 30px;
+       top: 60px;
+       bottom: 10px;
+
+}
+
+
+

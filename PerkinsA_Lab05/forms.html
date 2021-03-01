@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yummy Organics</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="mystyles.css">
+<link rel="icon" href="favicon.ico">
+
+<style>
+form { 
+	font-family: "Times New Roman", sans-serif;
+        padding: 10px; 
+
+
+}
+label { 
+
+float: left;
+	    width: 100px; 
+            clear: left;
+	    text-align: right; 
+	    padding-right: 0px;
+	    margin-top: 30px; 
+}
+
+
+h1 { 
+
+text-align: center;
+
+
+}
+input,textarea { 
+
+margin-top: 30px;
+	   	display: block;
+
+}
+
+select { 
+
+width: 350px;
+margin: 10px;	
+
+
+}
+
+
+select:focus {
+        min-width: 150px;
+        width: auto;
+    }  
+
+</style>
+<body>
+<h1>We Value Your Feedback</h1>
+<form action="mailto: contact@yummyorganics.com" method="get" enctype="text/plain">
+<fieldset>
+<legend>Your Information</legend>
+	<label for="theFirstName">First Name:</label>
+	<input type="text" name="theFirstName" id="theFirstName" required>
+	<label for="theLastName">Last Name:</label>
+  	<input type="text" name="theLastName" id="theLastName" required>
+  	<label for="email">E-mail:</label>
+  	<input type="email" name="email" id="email">
+	<label for="theCheckbox" style="text-align: left-center">Get Coupons:</label>
+	<input type="checkbox" name="theCheckbox" id="theCheckbox">
+
+
+</fieldset>
+	
+<fieldset>
+  <legend>Tell Us How Young You Are?</legend>
+
+  <input type="radio" id="ageGroup1" name="age" value="30">0-30<br>
+  <input type="radio" id="ageGroup2" name="age" value="60">31-60<br>
+  <input type="radio" id="ageGroup3" name="age" value="100">61-100<br>
+
+</fieldset>	
+
+
+<fieldset>
+<legend>Should We Add More Products?</legend>
+<select size = "3" name="newProduct" id="newProduct" multiple>
+	<option value="BodyWash">BodyWash</option>
+	<option value="Toothpaste">Toothpaste</option>
+	<option value="Mouthwash">Mouthwash</option>
+	<option value="Facial Cleanser">Facial Cleanser</option>
+	<option value="Facial Toner">Facial Toner</option>
+</select>
+</fieldset>
+
+<fieldset>
+<label for="theComments">Comments:</label>
+  	<textarea name="theComments" id="theComments" rows="6" cols="50"></textarea><br></br>
+  	<input type="submit"value="Submit"><input type="reset">
+
+</fieldset>
+	
+	
+</form>
+</body>
+</head>
+</html><h4> Page last updated on:
+<script>
+document.write(document.lastModified);
+</script>
+</h4>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yummy Organics</title>
+<meta charset="utf-8">
+</head>
+<link rel="stylesheet" href="mystyles.css">
+<link rel="icon" href="favicon.ico">
+
+<style> 
+
+nav { float: left;
+	  width: 150px;
+	  padding: 20px;
+} 
+main { margin-left: 165px;
+	   padding: 20px;
+	   display: block;
+} 
+
+table { margin: auto;
+	border: 5px solid green;
+	width: 600px;
+
+}
+
+caption { font-weight: bold;
+	  font-size: 1.2em;
+	  padding-bottom: 0.5em;
+
+}
+
+tr:nth-of-type(odd) { background-color: darkgrey;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+table {width: 400px; border: dotted blue; }
+tr:nth-of-type(even) { background-color: lightgrey; }
+caption {font-weight: normal; }
+}
+
+</style>
+<body>
+<table border = "1">
+<h4> Page last updated on:
+<script>
+document.write(document.lastModified);
+</script>
+<caption>Employee Contact</caption>
+      <tr>
+   	<th scope="col">Name</th>
+   	<th scope="col">Email</th>
+        <th scope="col">Phone</th>
+      </tr>
+   <tr>
+   	<td>Jordan Perkins</td>
+   	<td><a href="mailto:jcperk6@gmail.com">jcperk6@gmail.com</a></td>
+        <td>682-111-1234</td>
+      </tr>
+ <tr>
+   	<td>Ashlynn Perkins</td>
+   	<td><a href="mailto:ashrainboww@gmail.com">ashrainboww@gmail.com</a></td>
+        <td>682-222-1234</td>
+      </tr>
+<tr>
+   	<td>Cheyenne Dorsey</td>
+   	<td><a href="mailto:chydorsey12@gmail.com">chydorsey12@gmail.com</a></td>
+        <td>682-333-1234</td>
+      </tr>
+
+<script type="text/javascript">
+
+var slidesimages = new Array() 
+slidesimages[0] = new Image() 
+slidesimages[0].src = "naturalgoodies.jpg" 
+slidesimages[1] = new Image()
+slidesimages[1].src = "smoothbodybutter.jpg"
+slidesimages[2] = new Image()
+slidesimages[2].src = "organicsoap.jpg"
+slidesimages[3] = new Image()
+slidesimages[3].src = "creamybodybutter.jpg"
+slidesimages[4] = new Image()
+slidesimages[4].src = "herbalsalve.jpg"
+
+
+
+</script>
+<img src="smoothbodybutter.jpg" id="slide" width="200" height="70" />
+<script type="text/javascript">
+
+var steps=0
+
+function slidepic(){
+ 
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slidesimages[steps].src
+ if (steps<4)
+  steps++
+ else
+  steps=0
+
+ setTimeout("slidepic()",3000)
+}
+
+slidepic()
+
+</script>
+</body>
+</html>
